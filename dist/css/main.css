@@ -1,0 +1,88 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss ***!
+  \****************************************************************************************************************/
+.duck__container {
+  height: 300px;
+  width: 300px;
+  background: #56accc;
+  border-radius: 25%;
+  border: 20px solid green;
+  margin-bottom: 50px;
+}
+.duck__item img {
+  width: 60px;
+  transform: scaleX(-1);
+  mix-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 1280px) {
+  .duck__container {
+    position: relative;
+  }
+  .duck__item img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto 0 auto auto;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .duck__item img {
+    bottom: 0;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .duck__item img {
+    margin: auto auto 0 0;
+  }
+}
+.field {
+  background: #e7d168;
+  border: 10px solid #5f3b08;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+.field__carrot-container {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+.field__carrot {
+  max-width: 100%;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px solid #330000;
+  box-shadow: none;
+  background-color: red;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: #990000;
+}
+
+.balloon {
+  display: inline-block;
+  height: 150px;
+  width: 110px;
+  border-radius: 50%;
+  box-shadow: none;
+  background-color: #cccc00;
+  cursor: pointer;
+  transition: 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.gonfleToi {
+  height: 300px;
+  width: 300px;
+  transition: 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+}

@@ -1,0 +1,20 @@
+.field {
+  background: #e7d168;
+  border: 10px solid #5f3b08;
+  margin-bottom: 50px;
+  //IbouCode
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+
+  &__carrot-container {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__carrot {
+    max-width: 100%;
+  }
+}

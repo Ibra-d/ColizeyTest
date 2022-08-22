@@ -1,0 +1,59 @@
+.duck {
+  &__container {
+    height: 300px;
+    width: 300px;
+    background: #56accc;
+    border-radius: 25%;
+    border: 20px solid green;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    img {
+      width: 60px;
+      transform: scaleX(-1);
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+// IbouCode
+
+@media only screen and (max-width: 1280px) {
+  .duck {
+    &__container {
+      position: relative;
+    }
+
+    &__item {
+      img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto 0 auto auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .duck {
+    &__item {
+      img {
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .duck {
+    &__item {
+      img {
+        margin: auto auto 0 0;
+      }
+    }
+  }
+}
